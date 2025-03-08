@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1741444625946",
+    "username": "jap",
+    "password": "mat123",
+    "elo": 1016,
+    "matchesPlayed": 1,
+    "matchesWon": 1,
+    "totalRounds": 9,
+    "roundsWon": 5,
+    "created": 1741444625946
+  },
+  {
+    "id": "1741444683052",
+    "username": "jap2",
+    "password": "1233",
+    "elo": 984,
+    "matchesPlayed": 1,
+    "matchesWon": 0,
+    "totalRounds": 9,
+    "roundsWon": 4,
+    "created": 1741444683052
+  }
+]

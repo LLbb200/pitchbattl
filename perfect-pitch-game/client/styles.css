@@ -1,0 +1,196 @@
+:root {
+    --primary: #5D5CDE;
+    --secondary: #4F4FC7;
+    --accent: #FFC107;
+    --danger: #EF4444;
+    --success: #10B981;
+}
+
+/* Dark mode support */
+.dark {
+    --primary-text: #5D5CDE;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0.5; }
+}
+
+.animate-fadeIn {
+    animation: fadeIn 0.3s ease-in;
+}
+
+.animate-pulse-fast {
+    animation: pulse 0.7s linear infinite;
+}
+
+/* Note button styles */
+.note-btn {
+    background-color: white;
+    border: 1px solid #e5e7eb;
+    transition: all 0.2s;
+}
+
+.dark .note-btn {
+    background-color: #1f2937;
+    border-color: #374151;
+    color: #f9fafb;
+}
+
+.note-btn:hover {
+    background-color: #f3f4f6;
+}
+
+.dark .note-btn:hover {
+    background-color: #374151;
+}
+
+.note-btn:active {
+    transform: scale(0.95);
+}
+
+.note-btn.correct {
+    background-color: var(--success);
+    color: white;
+    border-color: var(--success);
+}
+
+.note-btn.incorrect {
+    background-color: var(--danger);
+    color: white;
+    border-color: var(--danger);
+}
+
+.note-btn.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Rank badge styles */
+.rank-badge {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.badge-novice {
+    background: linear-gradient(45deg, #9ca3af, #6b7280);
+    box-shadow: 0 0 10px rgba(156, 163, 175, 0.7);
+}
+
+.badge-apprentice {
+    background: linear-gradient(45deg, #4ade80, #22c55e);
+    box-shadow: 0 0 10px rgba(74, 222, 128, 0.7);
+}
+
+.badge-adept {
+    background: linear-gradient(45deg, #60a5fa, #3b82f6);
+    box-shadow: 0 0 10px rgba(96, 165, 250, 0.7);
+}
+
+.badge-expert {
+    background: linear-gradient(45deg, #c084fc, #a855f7);
+    box-shadow: 0 0 10px rgba(192, 132, 252, 0.7);
+}
+
+.badge-master {
+    background: linear-gradient(45deg, #fb923c, #f97316);
+    box-shadow: 0 0 10px rgba(251, 146, 60, 0.7);
+}
+
+.badge-grandmaster {
+    background: linear-gradient(45deg, #f43f5e, #e11d48);
+    box-shadow: 0 0 10px rgba(244, 63, 94, 0.7);
+}
+
+.badge-legend {
+    background: linear-gradient(45deg, #facc15, #eab308);
+    box-shadow: 0 0 15px rgba(250, 204, 21, 0.9);
+}
+
+.badge-virtuoso {
+    background: linear-gradient(45deg, #7dd3fc, #0ea5e9, #2563eb);
+    box-shadow: 0 0 15px rgba(125, 211, 252, 0.9);
+    position: relative;
+}
+
+.badge-virtuoso::after {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    background: linear-gradient(45deg, #7dd3fc, #0ea5e9, #2563eb);
+    z-index: -1;
+    border-radius: 50%;
+    animation: pulse 1.5s infinite;
+    opacity: 0.5;
+}
+
+/* Utility classes */
+.text-primary {
+    color: var(--primary);
+}
+
+.text-danger {
+    color: var(--danger);
+}
+
+.text-success {
+    color: var(--success);
+}
+
+.bg-primary {
+    background-color: var(--primary);
+}
+
+.bg-secondary {
+    background-color: var(--secondary);
+}
+
+.bg-danger {
+    background-color: var(--danger);
+}
+
+.bg-success {
+    background-color: var(--success);
+}
+
+.border-primary {
+    border-color: var(--primary);
+}
+
+.border-danger {
+    border-color: var(--danger);
+}
+
+.hover\:bg-primary:hover {
+    background-color: var(--primary);
+}
+
+.hover\:bg-secondary:hover {
+    background-color: var(--secondary);
+}
+
+.hover\:bg-danger:hover {
+    background-color: var(--danger);
+}
+
+.hover\:text-white:hover {
+    color: white;
+}
